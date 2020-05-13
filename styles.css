@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montse;
+}
+nav{
+    background-color: black;
+    height: 130px;
+    width: auto;
+}
+label.logo{
+    color : white;
+    font-size: 67px;
+    line-height: 75px;
+    padding: 0 70px;
+    font-weight: bold;
+    margin: 0 5px;
+    margin-top: 20px;
+    font-family: cursive;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 88px;
+    margin: 0 5px;
+    padding: 7px 15px;
+    border-radius: 4px
+}
+nav ul li a{
+    color: white;
+    font-size: 23px;
+}
+a.active,a:hover{
+    background-color: rosybrown;
+    transition: .4s;
+}
+.checkbtn{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 35px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 900px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 45px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 800px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rosybrown;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transform: all.0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 35px;
+    }
+    nav ul li a{
+        font-size: 30px;
+    }
+    a.hover,a.active{
+        color: white;
+        font-weight: 500px;
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+}
+section{
+    background-color: url(https://www.colorhexa.com/ffe4e1.png) no-repeat;
+    background-size: cover;
+    height: calc(100vh-80px);
+}
+.login-box{
+    position: relative;
+    margin: 10% auto;
+    height: 500px;
+    width: 1100px;
+    background: rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+.left-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    height: 600px;
+    width: 700px;
+}
+h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: black;
+    margin-left: 210px;
+    margin-top: 34px;
+}
+.input-box{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 450px;
+    height: 45px;
+    border: 1px solid #fff;
+    font-size: 21px;
+    transition: 0.2s;
+    color: black;
+    margin-left: 60px;
+}
+.submit-btn{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 88px;
+    height: 45px;
+    border: 1px solid #fff;
+    font-size: 21px;
+    transition: 0.2s;
+    color: #fff;
+    margin-left: 427px;
+    text-transform: uppercase;
+    border-color: #fff ;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #f44336;
+}
+.submit-btn: hover,
+.submit-btn: focus{
+    background: #ff5722;
+    transition: 0.2s;
+}
+.right-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 8px;
+    height: 600px;
+    width: 550px;
+}
+.right-title{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: black;
+    margin-right: 5px;
+    margin-top: 0.1px;
+    font-size: 40px;
+    display: block;
+}
