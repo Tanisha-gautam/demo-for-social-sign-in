@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
+    <form action="register.php" method="POST">
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -25,12 +26,13 @@
   
     <div class="left-b0x">
         <h1>Sign Up</h1>
-        <input type="text" class="input-box" placeholder="UserName">
-        <input type="email" class="input-box" placeholder="Email">
-        <input type="password" class="input-box" placeholder="Enter Password">
-        <input type="password" class="input-box" placeholder="Re-enter Password">
+        <input type="text" class="input-box" placeholder="UserName" name="username">
+        <input type="email" class="input-box" placeholder="Email" name="email">
+        <input type="password" class="input-box" placeholder="Enter Password" name="password">
+        <input type="password" class="input-box" placeholder="Re-enter Password" name="repassword">
         <input type="submit" class="submit-btn" value="Sign Up">
  
     </div>
+    </form>
 </body>
 </html>
