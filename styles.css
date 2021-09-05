@@ -7,9 +7,10 @@
 }
 body{
     font-family: montse;
+    background-image: url("bg.jpg");
 }
 nav{
-    background-color: black;
+    background-color: blue;
     height: 130px;
     width: auto;
 }
@@ -19,7 +20,7 @@ label.logo{
     line-height: 75px;
     padding: 0 70px;
     font-weight: bold;
-    margin: 0 5px;
+    margin: 06px;
     margin-top: 20px;
     font-family: cursive;
 }
@@ -39,7 +40,7 @@ nav ul li a{
     font-size: 23px;
 }
 a.active,a:hover{
-    background-color: rosybrown;
+    background-color: cornflowerblue;
     transition: .4s;
 }
 .checkbtn{
@@ -93,19 +94,7 @@ a.active,a:hover{
         left: 0;
     }
 }
-section{
-    background-color: url(https://www.colorhexa.com/ffe4e1.png) no-repeat;
-    background-size: cover;
-    height: calc(100vh-80px);
-}
-.login-box{
-    position: relative;
-    margin: 10% auto;
-    height: 500px;
-    width: 1100px;
-    background: rgba(0,0,0,0.2);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-}
+
 .left-box{
     position: absolute;
     top: 0;
@@ -157,22 +146,4 @@ h1{
 .submit-btn: focus{
     background: #ff5722;
     transition: 0.2s;
-}
-.right-box{
-    position: absolute;
-    top: 0;
-    right: 0;
-    box-sizing: border-box;
-    padding: 8px;
-    height: 600px;
-    width: 550px;
-}
-.right-title{
-    margin-bottom: 20px;
-    font-size: 30px;
-    color: black;
-    margin-right: 5px;
-    margin-top: 0.1px;
-    font-size: 40px;
-    display: block;
 }
